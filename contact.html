@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact & Book — Dr. Maya Reynolds, PsyD — Santa Monica</title>
+    <meta name="description" content="Contact Dr. Maya Reynolds in Santa Monica. Schedule a free 15-minute consult or send a message to learn about therapy options.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Grow My Therapy</div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-title">Contact & Booking</h1>
+                <p class="fade-in">Schedule a complimentary 15-minute consult to see if we’re a good fit, or send a message and I'll respond within 2 business days.</p>
+
+                <div class="contact-form" role="form">
+                    <form id="contactForm" class="fade-in" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me briefly what brings you here..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+
+                <p style="text-align:center; margin-top:18px">Prefer a quick call? <button id="openConsult" class="cta-button" aria-haspopup="dialog">Schedule a free 15-minute consult</button></p>
+            </div>
+        </section>
+
+        <!-- Modal for quick consult -->
+        <div id="consultModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" style="display:none;">
+            <div class="modal-content">
+                <button id="closeConsult" class="menu-toggle" aria-label="Close consult" style="margin-bottom:12px">✕</button>
+                <h2>Schedule a Free 15-Minute Consult</h2>
+                <p>Please share a preferred day/time and a contact phone or email.</p>
+                <form id="consultForm">
+                    <div class="form-group">
+                        <input id="consultName" name="consultName" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="consultContact" name="consultContact" type="text" placeholder="Phone or email" required>
+                    </div>
+                    <div class="form-group">
+                        <input id="consultTime" name="consultTime" type="text" placeholder="Preferred day/time" required>
+                    </div>
+                    <button type="submit" class="cta-button">Request Consult</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dr. Maya Reynolds</h3>
+                    <p>Compassionate therapy for your wellbeing</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 contact@mayareynolds.com</p>
+                    <p>📱 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Maya Reynolds. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
